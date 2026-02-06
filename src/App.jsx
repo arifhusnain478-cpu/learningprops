@@ -1,5 +1,7 @@
 import React from 'react'
 import Card from './components/Card'
+import ColorBar from './components/ColorBar/ColorBar'
+import TokenGenrator from './components/TokenGenrator/TokenGenrator'
 function App() {
   let arr = [
     {
@@ -18,12 +20,15 @@ function App() {
   ]
 
   return (
-    <div className="text-black">
+    <>
+    <div className="text-black w-full flex">
       {
         arr.map((se) => (
 
           <>
-          <Card Data={se}/>
+        
+           <Card Data={se}/>
+          
             
           </>
         ) )}
@@ -31,6 +36,10 @@ function App() {
 
 
     </div>
+
+    <ColorBar/>
+    <TokenGenrator/>
+    </>
   )
 }
 

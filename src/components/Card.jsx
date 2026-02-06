@@ -7,9 +7,9 @@ function Card({Data}) {
         
 
 
-    <div className="max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden m-4" >
+    <div className="max-w-90 bg-white rounded-2xl shadow-lg overflow-hidden m-4" >
  
-  <img src={Data.imageSRC || "/src/assets/2.jpg"} alt="Sample Image" className="w-full h-48 object-cover" />
+  <img src={Data.imageSRC || "/src/assets/2.jpg"} alt="Sample Image" className="w-90 h-48 object-cover" />
 
 
   <div className="p-6">
